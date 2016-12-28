@@ -1,0 +1,19 @@
+{
+    "compilerOptions": {
+        "declaration": true,
+        "sourceMap": true,
+        "module": "commonjs",
+        "noImplicitAny": false,
+        "target": "es5",
+        "moduleResolution": "node",
+        "experimentalDecorators": true,
+        "allowJs": false,
+        "allowUnreachableCode": false,
+        "allowUnusedLabels": false,
+        "suppressImplicitAnyIndexErrors": true,
+        "emitDecoratorMetadata": true
+    },
+    "exclude": [
+        "node_modules"
+    ]
+}

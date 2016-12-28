@@ -1,0 +1,37 @@
+{
+  "name": "nongrx",
+  "version": "0.1.1",
+  "description": "Basically an ngrx-clone without the need for angular.",
+  "main": "index.js",
+  "url": "https://github.com/ommsolutions/nongrx",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/ommsolutions/nongrx"
+  },
+  "scripts": {
+    "build": "tsc",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": [
+    "store",
+    "ngrx",
+    "nogrx",
+    "reactive",
+    "rxjs"
+  ],
+  "author": "OMM Solutions GmbH, Olaf Horstmann <oh@omm-solutions.de>",
+  "license": "MIT",
+  "dependencies": {
+    "@ngrx/core": "1.2.0",
+    "@ngrx/store": "2.2.1",
+    "reflect-metadata": "0.1.9"
+  },
+  "peerDependencies": {
+    "rxjs": "^5.0.2"
+  },
+  "devDependencies": {
+    "inferno-component": "1.0.0-beta42",
+    "es6-shim": "0.35.2",
+    "typescript": "2.1.4"
+  }
+}
