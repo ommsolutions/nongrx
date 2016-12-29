@@ -1,6 +1,6 @@
 {
   "name": "nongrx",
-  "version": "0.2.0",
+  "version": "0.2.1",
   "description": "Basically an ngrx-clone without the need for angular.",
   "main": "index.js",
   "url": "https://github.com/ommsolutions/nongrx",
