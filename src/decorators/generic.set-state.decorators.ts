@@ -9,10 +9,10 @@ import "rxjs/add/operator/do";
 import "rxjs/add/operator/catch";
 import "rxjs/add/observable/combineLatest";
 
-const PROPERTY_KEY_PREFIX: string = "___nongrx.state-set.";
+const PROPERTY_KEY_PREFIX: string = "___nongrx.set-state.";
 const CONFIG: string = PROPERTY_KEY_PREFIX + "config";
 
-interface INongrxStateSetConfig {
+interface INongrxSetStateConfig {
     // maps each property-key to the corresponding state-key
     mappingList: [string, string | boolean][];
     unmounted$: Subject<any>;
@@ -26,7 +26,7 @@ export function SetsState(prop?: string | boolean) {
     return function (target: any, propertyKey: string) {
         Object.defineProperty(target, propertyKey, {
             set: function (value: any) {
-                let config: INongrxStateSetConfig = this[CONFIG];
+                let config: INongrxSetStateConfig = this[CONFIG];
                 if (!config) {
                     config = this[CONFIG] = <any>{
                         mappingList: [],

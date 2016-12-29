@@ -1,6 +1,6 @@
 {
   "name": "nongrx",
-  "version": "0.1.1",
+  "version": "0.2.0",
   "description": "Basically an ngrx-clone without the need for angular.",
   "main": "index.js",
   "url": "https://github.com/ommsolutions/nongrx",
@@ -30,8 +30,10 @@
     "rxjs": "^5.0.2"
   },
   "devDependencies": {
-    "inferno-component": "1.0.0-beta42",
+    "@types/es6-shim": "0.31.32",
     "es6-shim": "0.35.2",
+    "inferno-component": "1.0.0-beta44",
+    "rxjs": "^5.0.2",
     "typescript": "2.1.4"
   }
 }
