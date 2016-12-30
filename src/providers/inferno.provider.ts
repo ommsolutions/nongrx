@@ -1,4 +1,4 @@
-import Component from 'inferno-component';
+import * as Component from 'inferno-component';
 
 export class Provider extends Component<any, any> {
     store: any;
