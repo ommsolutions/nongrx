@@ -5,6 +5,9 @@ This project currently has no affiliation with the official ngrx-repository, all
 ## How it works
 For the basic functionalities please have a look at the original repo at: [ngrx/store](https://github.com/ngrx/store)
 
+## Install
+`npm install nongrx`
+
 ## Basic Setup (inferno)
 Please note that this is a simplified example setup, which works in many cases, a more sophisticated example is in development currently.
 
@@ -35,8 +38,8 @@ export const store = registerStore(CounterReducer);
 #### app.tsx
 ```tsx
 import {render} from "inferno";
-import * as createElement from "inferno-create-element";
-import * as Component from "inferno-component";
+import createElement from "inferno-create-element";
+import Component from "inferno-component";
 import {Store, SetsState} from "nongrx/store";
 import {Provider} from "nongrx/inferno";
 import "rxjs/add/operator/map";
