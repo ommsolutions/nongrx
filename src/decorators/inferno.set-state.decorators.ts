@@ -69,8 +69,10 @@ export function SetsState(prop?: string | boolean, sync: boolean = false) {
                         delete config.subscriptions[propertyKey];
                     }
                     config.subscriptions[propertyKey] = stream$
-                        .catch(() => stream$)
-                        .subscribe();
+                        .subscribe(
+                            undefined,
+                            error => console.error(error)
+                        );
                 };
 
                 if (this._unmounted && this.componentDidMount) {

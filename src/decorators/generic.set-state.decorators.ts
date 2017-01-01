@@ -88,8 +88,10 @@ export function SetsState(prop?: string | boolean) {
                             delete config.subscription;
                         }
                         config.subscription = config.stream$
-                            .catch(() => config.stream$)
-                            .subscribe();
+                            .subscribe(
+                                undefined,
+                                error => console.error(error)
+                            );
                     };
 
                     if (this._unmounted && this.componentDidMount) {
